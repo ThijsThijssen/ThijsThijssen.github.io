@@ -16,7 +16,7 @@ section {
 
 /* Variable for the Google Maps JavaScript API map */
 #map {
-  height: 350px;
+  height: 200px;
   width: 100%;
 }
 
@@ -48,4 +48,12 @@ section {
 
 .card-container {
   padding: 2px 16px;
+}
+
+.music-icon {
+  display: none;
+}
+
+.music-header:hover + .music-icon {
+  display: inline-block;
 }
