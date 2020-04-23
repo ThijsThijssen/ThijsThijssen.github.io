@@ -57,3 +57,21 @@ section {
 .music-header:hover + .music-icon {
   display: inline-block;
 }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.center-text {
+  text-align: center;
+}
