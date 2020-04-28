@@ -42,6 +42,26 @@ section {
   width: 100%;
 }
 
+.black-card {
+  background-color: black;
+  color: white;
+}
+
+.white-card {
+  background-color: white;
+  color: black;
+}
+
+.black-text {
+  color: black;
+  font-size: 20px;
+}
+
+.white-text {
+  color: white;
+  font-size: 20px;
+}
+
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
@@ -57,15 +77,17 @@ section {
 .music-header:hover + .music-icon {
   display: inline-block;
 }
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 50%;
-}
 
 td, th {
   text-align: left;
   padding: 8px;
+}
+
+.padding-image {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 tr:nth-child(even) {
@@ -74,4 +96,32 @@ tr:nth-child(even) {
 
 .center-text {
   text-align: center;
+}
+
+.right-text {
+  text-align: right;
+}
+
+.most-picked-img {
+  width: 42px;
+}
+
+.nav-logo {
+  width: 250px;
+  height: 70px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Acme', sans-serif;
+}
+.nav-font {
+  font-family: 'Acme', sans-serif;
+}
+
+h2 > a {
+  display: none;
+}
+
+h2:hover > a {
+  display: inline;
 }
