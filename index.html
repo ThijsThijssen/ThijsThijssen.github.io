@@ -38,6 +38,9 @@
 
   <!-- End CSS Imports -->
 
+  <!-- reCAPTCHA v2 -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body id="page-top">
@@ -57,7 +60,7 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger nav-font" href="#nieuws">Laatste Nieuws</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item white-key">
             <a class="nav-link js-scroll-trigger nav-font" href="#overFlorein">Over Florein</a>
           </li>
           <li class="nav-item">
@@ -86,6 +89,10 @@
     style="background-image: url('http://floreinspianolessen.nl/Piano%20helemaal.jpg');">
     <div class="container text-center">
       <h1><i>Welkom bij Floreins Pianolessen</i></h1>
+      <br>
+      <br>
+      <br>
+      <h2 class="black-text"><i>"Hele leuke en leerzame pianolessen!" ~ John Doe</i></h2>
     </div>
   </header>
   <!-- End Header -->
@@ -101,7 +108,7 @@
             pianodocente. Ik geef sinds 2013 les aan kinderen en volwassenen bij mij thuis in Rivierenwijk te
             Utrecht. Vaak loopt de kat ook nog ergens rond. Plezier in het muziek maken staat bij mij op de eerste
             plaats en we bekijken samen wat het beste bij je past. Iedereen vanaf 5 jaar oud is welkom, dus mocht je
-            enthousiast geworden zijn, kun je je <a class="js-scroll-trigger" href="#contact">hier</a> aanmelden voor
+            enthousiast geworden zijn, kun je je <a class="js-scroll-trigger" href="#contact"><b>hier</b></a> aanmelden voor
             een proefles!
           </p>
           <p class="lead">Verdere informatie vind je op de website, maar mocht er toch nog iets onduidelijk zijn kun je
@@ -121,11 +128,11 @@
           <hr>
 
           <!-- Start corona artikel -->
-          <div class="row">
+          <div id="artikel1" class="row">
 
             <!-- Informative text/news article -->
             <div class="col-lg-8">
-              <h4>Corona & Digitaal lesgeven</h4>
+              <h4>Corona & Digitaal lesgeven <a><img src="img/cat.svg" alt="" style="width: 20px;"></a></h4>
               <small><i>Maandag 16 maart 2020</i></small>
               <p class="lead">Door de maatregelen die het coronavirus met zich meebrengt, heb ik mijn lessen wat aan
                 moeten passen. Gelukkig kan ik de lessen door laten gaan door middel van Zoom of Skype. Ik maak gebruik
@@ -135,6 +142,7 @@
               <p class="lead">Wanneer de maatregelen opgeheven zijn, kun je gewoon weer bij mij thuis terecht. Digitaal
                 lesgeven is na deze periode alleen mogelijk in overleg.
               </p>
+              <button id="btnArtikel1" onclick="showDiv('artikel2,btnArtikel1')" class="btn btn-primary">Lees meer</button>
             </div>
 
             <!-- Photo -->
@@ -147,11 +155,11 @@
           <br>
 
           <!-- Start corona artikel -->
-          <div class="row">
+          <div id="artikel2" class="row">
 
             <!-- Informative text/news article -->
             <div class="col-lg-12">
-              <h4>Prijzen update</h4>
+              <h4>Prijzen update <a><img src="img/cat.svg" alt="" style="width: 20px;"></a></h4>
               <small><i>Woensdag 1 januari 2020</i></small>
               <p class="lead">De lestarieven van 2020 staan online! De proeflessen zijn goedkoper en er zijn nog een
                 paar kleine aanpassingen gedaan. Kijk onder het kopje <a class="js-scroll-trigger"
@@ -209,12 +217,13 @@
           <br>
           <div class="row">
             <div class="col-lg-5 mx-auto">
+              <h4>Las Músicas <a><img src="img/cat.svg" alt="" style="width: 20px;"></a></h4>
               <iframe width="400" height="250" src="https://www.youtube.com/embed/T8Ib4tM_TwQ" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
             <div class="col-lg-7">
-              <h4>Las Músicas</h4>
+              <br>
               <p class="lead">Naast mijn werk als muziekdocente, speel ik graag in muziekensembles. Denk hierbij aan een
                 salsaband of
                 een balkon-trio. Momenteel ben ik pianiste bij het muziektrio Las Músicas. Onze specialiteit is
@@ -274,7 +283,7 @@
             kan ik met jou een tijd afstemmen die voor jou uitkomt. Dit kan overdag zijn maar als alleen ‘s avonds jou
             uitkomt, kan dat ook. We kunnen samen overleggen wat het best bij je past!</p>
 
-          <h4>Vakantierooster</h4>
+          <h4>Vakantierooster <a><img src="img/cat.svg" alt="" style="width: 20px;"></a></h4>
           <p class="lead">
             Tijdens de schoolvakanties geef ik gewoonlijk geen les. Utrecht valt in de regio midden. De schoolvakanties zijn dit jaar <a
               href="https://www.rijksoverheid.nl/onderwerpen/schoolvakanties/overzicht-schoolvakanties-per-schooljaar/overzicht-schoolvakanties-2019-2020"
@@ -304,6 +313,7 @@
 
           <h4>Tarieven
             <script>document.write(new Date().getFullYear())</script>
+            <a><img src="img/cat.svg" alt="" style="width: 20px;"></a>
           </h4>
 
           <!-- Kinderen -->
@@ -377,13 +387,13 @@
           <br>
 
           <!-- Proefles -->
-          <h4>Proefles</h4>
+          <h4>Proefles <a><img src="img/cat.svg" alt="" style="width: 20px;"></a></h4>
           <p class="lead">Ik kan me voorstellen dat je eerst wil weten hoe het is om van mij les te krijgen. Je kan
             daarom een proefles volgen. Deze les duurt een halfuur en kost 20 euro. In de proefles kijken we samen wat
             je wil leren en wat je piano niveau is.</p>
 
           <!-- Belangrijke zaken -->
-          <h4>Belangrijke zaken</h4>
+          <h4>Belangrijke zaken <a><img src="img/cat.svg" alt="" style="width: 20px;"></a></h4>
           <ul>
             <li class="lead">De pianolessen worden in het algemeen bij mij thuis gegeven, op de Schipbeekstraat in
               Rievierenwijk.</li>
@@ -445,7 +455,7 @@
                     <small id="opmerkingErr" class="form-text text-muted"></small>
                   </div>
                   <div class="form-group">
-                    <div class="g-recaptcha" data-sitekey="6LemZY8UAAAAAG_51llZApebbUSsp-BEV8KUvc6r"></div>
+                    <div class="g-recaptcha" data-sitekey="6LfpJPcUAAAAAE_NgT0ffESzYLUHKj8AQqnHZOgU"></div>
                   </div>
                   <button type="submit" class="btn btn-primary">Verstuur</button>
                 </form>
@@ -723,7 +733,7 @@
         } else {
           event.preventDefault();
           $.post("", {
-            "secret": "6LemZY8UAAAAAA4-dDe6ZsDgS37pFCJ_rR78Mn-7",
+            "secret": "6LfpJPcUAAAAABlnqC1gkUgKO8sHIG_qjFPI7Dw5",
             "response": recaptcha,
             "name": name,
             "email": email,

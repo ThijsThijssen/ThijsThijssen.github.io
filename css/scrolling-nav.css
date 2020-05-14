@@ -122,6 +122,14 @@ h2 > a {
   display: none;
 }
 
+h4 > a {
+  display: none;
+}
+
 h2:hover > a {
+  display: inline;
+}
+
+h4:hover > a {
   display: inline;
 }

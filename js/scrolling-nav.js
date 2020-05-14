@@ -42,3 +42,17 @@ $(document).ready(function () {
     $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
   });
 });
+
+// Lees meer artikelen
+function showDiv(divToShow,btn) {
+  var x = document.getElementById(divToShow);
+  var y = document.getElementById(btn);
+  
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.innerHTML = "show less";
+  } else {
+    x.style.display = "none";
+    y.innerHTML = "show more";
+  }
+}
