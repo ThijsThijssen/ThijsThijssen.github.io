@@ -133,3 +133,7 @@ h2:hover > a {
 h4:hover > a {
   display: inline;
 }
+
+.padding-right {
+  padding-right: 20px;
+}
