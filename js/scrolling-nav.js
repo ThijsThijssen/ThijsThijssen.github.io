@@ -44,15 +44,37 @@ $(document).ready(function () {
 });
 
 // Lees ander nieuws
-$().ready(addButtonEventListener);
+$().ready(addPrijzenUpdateButtonEventListener);
 
-function addButtonEventListener() {
+function addPrijzenUpdateButtonEventListener() {
   document.getElementById("btnPrijzenUpdate").addEventListener("click", showPrijzenUpdate);
 }
 
 function showPrijzenUpdate() {
   var x = document.getElementById("prijzenUpdate");
   var y = document.getElementById("btnPrijzenUpdate");
+  var z = document.getElementById("voorspeeldagBtn");
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    z.style.display = "block";
+    y.innerHTML = "Lees minder nieuws";
+  } else {
+    x.style.display = "none";
+    z.style.display = "none";
+    y.innerHTML = "Lees ander nieuws";
+  }
+}
+
+$().ready(addVoorspeeldagButtonEventListener);
+
+function addVoorspeeldagButtonEventListener() {
+  document.getElementById("btnVoorspeeldag").addEventListener("click", showVoorspeeldagUpdate);
+}
+
+function showVoorspeeldagUpdate() {
+  var x = document.getElementById("voorspeeldagNieuws");
+  var y = document.getElementById("btnVoorspeeldag");
 
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -64,9 +86,11 @@ function showPrijzenUpdate() {
 }
 
 // Quotes veranderen elke 5 seconden
-quotes = ["Anne (10 jaar): 'Door Florein leer ik goed piano te  spelen, in mijn eigen tempo. Het leuke is dat ik zelf de liedjes mag uitkiezen. Ik kijk dan ook elke week uit naar haar pianoles!'",
-"Cleo (13 jaar): 'Ik vind Floreins pianolessen vooral superleuk omdat je erg veel ruimte krijgt om zelf liedjes die je leuk vind uit te kiezen en te leren. Ook geeft ze vaak zelf erg leuke ideeën voor liedjes die je zou kunnen leren.'",
-"Astrid: 'Mijn zoon heeft al een aantal jaren pianoles bij Florein. Hij geniet hier enorm van en gaat met veel plezier naar haar toe. Hij heeft al heel veel geleerd en blijft leren!'"]
+quotes = [
+  "Anne (10 jaar): \"Door Florein leer ik goed piano te  spelen, in mijn eigen tempo. Het leuke is dat ik zelf de liedjes mag uitkiezen. Ik kijk dan ook elke week uit naar haar pianoles!\"",
+  "Cleo (13 jaar): \"Ik vind Floreins pianolessen vooral superleuk omdat je erg veel ruimte krijgt om zelf liedjes die je leuk vind uit te kiezen en te leren. Ook geeft ze vaak zelf erg leuke ideeën voor liedjes die je zou kunnen leren.\"",
+  "Astrid: \"Mijn zoon heeft al een aantal jaren pianoles bij Florein. Hij geniet hier enorm van en gaat met veel plezier naar haar toe. Hij heeft al heel veel geleerd en blijft leren!\""
+];
 
 function getRandomQuote() {
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
