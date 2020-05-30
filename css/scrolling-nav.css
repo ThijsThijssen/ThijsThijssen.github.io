@@ -140,3 +140,34 @@ h4:hover > a {
 .footer-text {
   color: white;
 }
+
+.blurred-background {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid black;
+  padding: 3px;
+}
+
+.slide-effect {
+  animation: slide-effect 7.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide-effect {
+  0% {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  10%, 80% {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  100% {
+    margin-left: -400%;
+  }
+}
+
+.img-container {
+  text-align: center;
+}

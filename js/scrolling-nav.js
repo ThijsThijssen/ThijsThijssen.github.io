@@ -89,7 +89,8 @@ function showVoorspeeldagUpdate() {
 quotes = [
   "Anne (10 jaar): \"Door Florein leer ik goed piano te  spelen, in mijn eigen tempo. Het leuke is dat ik zelf de liedjes mag uitkiezen. Ik kijk dan ook elke week uit naar haar pianoles!\"",
   "Cleo (13 jaar): \"Ik vind Floreins pianolessen vooral superleuk omdat je erg veel ruimte krijgt om zelf liedjes die je leuk vind uit te kiezen en te leren. Ook geeft ze vaak zelf erg leuke ideeën voor liedjes die je zou kunnen leren.\"",
-  "Astrid: \"Mijn zoon heeft al een aantal jaren pianoles bij Florein. Hij geniet hier enorm van en gaat met veel plezier naar haar toe. Hij heeft al heel veel geleerd en blijft leren!\""
+  "Astrid: \"Mijn zoon heeft al een aantal jaren pianoles bij Florein. Hij geniet hier enorm van en gaat met veel plezier naar haar toe. Hij heeft al heel veel geleerd en blijft leren!\"",
+  "Vera (13 jaar): \"Ik vind je piano lessen heel erg leuk en leerzaam, de liedjes zijn ook altijd erg leuk omdat Florein altijd meedenkt voor liedjes die jij leuk vindt en die bij je passen!\""
 ];
 
 function getRandomQuote() {
@@ -98,5 +99,5 @@ function getRandomQuote() {
 }
 
 $().ready(function() {
-  setInterval(getRandomQuote, 15000);
+  setInterval(getRandomQuote, 7500);
 });

@@ -38,7 +38,7 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/b5123c0406.js" crossorigin="anonymous"></script>
 
   <!-- Acme font -->
   <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
@@ -106,11 +106,14 @@
       <br>
       <br>
       <br>
-      <i>
-        <h2 id="quote" class="black-text">Anne (10 jaar): "Door Florein leer ik goed piano te spelen, in mijn eigen
-          tempo. Het leuke is dat ik zelf de liedjes mag uitkiezen. Ik kijk dan ook elke week uit naar haar
-          pianoles!"</h2>
-      </i>
+      <div class="blurred-background">
+        <i>
+          <h2 id="quote" class="black-text slide-effect">Anne (10 jaar): "Door Florein leer ik goed piano te spelen, in
+            mijn eigen
+            tempo. Het leuke is dat ik zelf de liedjes mag uitkiezen. Ik kijk dan ook elke week uit naar haar
+            pianoles!"</h2>
+        </i>
+      </div>
     </div>
   </header>
   <!-- End Header -->
@@ -152,7 +155,7 @@
           <!-- Start weer lessen thuis artikel -->
           <div class="row">
             <div class="col-lg-8">
-              <h4>Weer lessen bij mij thuis! <a><img src="img/cat.svg" alt="" style="width: 20px;"></a></h4>
+              <h4>Weer lessen bij mij thuis! <a><span class="fas fa-cat"></span></a></h4>
               <small><i>Maandag 18 mei 2020</i></small>
               <p class="lead">Ik mag weer live pianolessen geven! Ik kijk er naar uit om jullie weer in het echt te
                 zien.
@@ -174,7 +177,7 @@
 
             <!-- Informative text/news article -->
             <div class="col-lg-8">
-              <h4>Corona & Digitaal lesgeven <a><img src="img/cat.svg" alt="" style="width: 20px;"></a></h4>
+              <h4>Corona & Digitaal lesgeven <a><span class="fas fa-cat"></span></a></h4>
               <small><i>Maandag 16 maart 2020</i></small>
               <p class="lead">Door de maatregelen die het coronavirus met zich meebrengt, heb ik mijn lessen wat aan
                 moeten passen. Gelukkig kan ik de lessen door laten gaan door middel van Zoom of Skype. Ik maak gebruik
@@ -200,7 +203,7 @@
           <!-- Begin nieuwe website -->
           <div class="row">
             <div class="col-lg-12">
-              <h4>Nieuwe website <a><img src="img/cat.svg" alt="" style="width: 20px;"></a></h4>
+              <h4>Nieuwe website <a><span class="fas fa-cat"></span></a></h4>
               <small><i>Zondag 31 mei 2020</i></small>
               <p class="lead">
                 Sinds mei staat mijn nieuwe website online! De website heeft een ander uiterlijk en alle informatie
@@ -227,7 +230,7 @@
 
             <!-- Informative text/news article -->
             <div class="col-lg-12">
-              <h4>Prijzen update <a><img src="img/cat.svg" alt="" style="width: 20px;"></a></h4>
+              <h4>Prijzen update <a><span class="fas fa-cat"></span></a></h4>
               <small><i>Woensdag 1 januari 2020</i></small>
               <p class="lead">De lestarieven van 2020 staan online! De proeflessen zijn goedkoper en er zijn nog een
                 paar kleine aanpassingen gedaan. Kijk onder het kopje <a class="js-scroll-trigger"
@@ -251,7 +254,7 @@
           <!-- Start voorspeeldag -->
           <div id="voorspeeldagNieuws" class="row" style="display: none;">
             <div class="col-lg-12">
-              <h4>Voorspeeldag <a><img src="img/cat.svg" alt="" style="width: 20px;"></a></h4>
+              <h4>Voorspeeldag <a><span class="fas fa-cat"></span></a></h4>
               <small><i>T.B.A.</i></small>
               <p class="lead">De voorspeeldag komt er weer aan! Leerlingen en ouders zijn zoals ieder jaar weer van
                 harte welkom op DATUM om TIJD uur. Ben je nog niet bekend met de voorspeeldag? Neem dan een kijkje bij
@@ -313,7 +316,7 @@
           <!-- Las Musicas -->
           <div class="row" style="background-color: white;">
             <div class="col-lg-5 mx-auto">
-              <h4>Las Músicas <a><img src="img/cat.svg" alt="" style="width: 20px;"></a></h4>
+              <h4>Las Músicas <a><span class="fas fa-cat"></span></a></h4>
               <iframe class="padding-right" width="400" height="250" src="https://www.youtube.com/embed/T8Ib4tM_TwQ"
                 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
@@ -332,7 +335,7 @@
           <!-- Bende van Bunnik -->
           <div class="row">
             <div class="col-lg-7">
-              <h4>Bende van Bunnik <a><img src="img/cat.svg" alt="" style="width: 20px;"></a></h4>
+              <h4>Bende van Bunnik <a><span class="fas fa-cat"></span></a></h4>
               <p class="lead">Ook speel ik regelmatig in een akoestische band genaamd Bende van Bunnik. Dit doe ik samen
                 met vier anderen. De band bestaat uit een saxofonist, banjo- en mondharmonicaspeler, contrabassist,
                 drummer en mijzelf achter de piano. We spelen graag blues en jazz muziek.</p>
@@ -356,16 +359,13 @@
           <hr>
 
           <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-12">
               <p class="lead">Ieder jaar organiseer ik een voorspeeldag. Dit is aan het einde van het schooljaar in de
                 maand mei of juni. Tijdens deze dag kunnen leerlingen laten horen welke liedjes ze afgelopen periode
                 geleerd hebben. Ouders zijn dan van harte welkom!</p>
               <p class="lead">Halverwege het jaar is er soms ook nog een mini voorspeelavond met alleen leerlingen, dus
                 zonder publiek van ouders. De voorspeeldagen worden als zeer leerzaam maar vooral gezellig ervaren. Het
                 is inmiddels een echte traditie geworden!</p>
-            </div>
-            <div class="col-lg-4">
-              <img src="https://via.placeholder.com/350x250" alt="Stock Photo!">
             </div>
           </div>
 
@@ -389,7 +389,7 @@
             kan ik met jou een tijd afstemmen die voor jou uitkomt. Dit kan overdag zijn maar als alleen ‘s avonds jou
             uitkomt, kan dat ook. We kunnen samen overleggen wat het best bij je past!</p>
 
-          <h4>Vakantierooster <a><img src="img/cat.svg" alt="" style="width: 20px;"></a></h4>
+          <h4>Vakantierooster <a><span class="fas fa-cat"></span></a></h4>
           <p class="lead">
             Tijdens de schoolvakanties geef ik gewoonlijk geen les. Utrecht valt in de regio midden. De schoolvakanties
             zijn dit jaar <a
@@ -420,7 +420,7 @@
 
           <h4>Tarieven
             <script>document.write(new Date().getFullYear())</script>
-            <a><img src="img/cat.svg" alt="" style="width: 20px;"></a>
+            <a><span class="fas fa-cat"></span></a>
           </h4>
 
           <!-- Kinderen -->
@@ -494,7 +494,7 @@
           <br>
 
           <!-- Proefles -->
-          <h4>Proefles <a><img src="img/cat.svg" alt="" style="width: 20px;"></a></h4>
+          <h4>Proefles <a><span class="fas fa-cat"></span></a></h4>
           <p class="lead">Ik kan me voorstellen dat je eerst wil weten hoe het is om van mij les te krijgen. Je kan
             daarom een proefles volgen. Deze les duurt een half uur en kost 20 euro. In de proefles kijken we samen wat
             je wil leren en wat je piano niveau is.</p>
@@ -503,7 +503,7 @@
           <div class="row">
             <div class="col-lg-6">
               <!-- Belangrijke zaken -->
-              <h4>Belangrijke zaken <a><img src="img/cat.svg" alt="" style="width: 20px;"></a></h4>
+              <h4>Belangrijke zaken <a><span class="fas fa-cat"></span></a></h4>
               <ul>
                 <li class="lead">De pianolessen worden in het algemeen bij mij thuis gegeven, op de Schipbeekstraat in
                   Rievierenwijk.</li>
@@ -874,7 +874,9 @@
 
       <div class="row">
         <div class="col-lg-12">
-          <img src="img/Floreins_Pianolessen_Logo_PNG_Utrecht_Rivierenwijk.png" alt="" class="w-25">
+          <div class="img-container">
+            <img src="img/Floreins_Pianolessen_Logo_PNG_Utrecht_Rivierenwijk.png" alt="" class="w-25">
+          </div>
         </div>
       </div>
 
