@@ -99,5 +99,5 @@ function getRandomQuote() {
 }
 
 $().ready(function() {
-  setInterval(getRandomQuote, 7500);
+  setInterval(getRandomQuote, 7250);
 });

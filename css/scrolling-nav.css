@@ -3,7 +3,7 @@ header {
 }
 
 section {
-  padding: 50px 0;
+  padding: 25px 0;
 }
 
 .bg-image-full {
@@ -145,6 +145,7 @@ h4:hover > a {
   background-color: rgba(255, 255, 255, 0.5);
   border: 1px solid black;
   padding: 3px;
+  height: 100px;
 }
 
 .slide-effect {
@@ -164,7 +165,7 @@ h4:hover > a {
   }
 
   100% {
-    margin-left: -400%;
+    margin-left: -500%;
   }
 }
 
