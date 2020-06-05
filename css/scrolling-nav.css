@@ -14,12 +14,6 @@ section {
   -o-background-size: cover;
 }
 
-/* Variable for the Google Maps JavaScript API map */
-#map {
-  height: 200px;
-  width: 100%;
-}
-
 .profile-image {
   border-radius: 50%;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
